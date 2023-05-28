@@ -18,7 +18,7 @@ abstract class Kendaraan {
     print(suaraKlakson);
   }
 
-  void jumlahRoda(int roda) {
+  void jumlahRoda(int? roda) {
     print(roda);
   }
 
@@ -26,11 +26,11 @@ abstract class Kendaraan {
 }
 
 class Mobil extends Kendaraan {
-  int roda;
+  int? roda;
   Mobil({this.roda});
 
   @override
-  void jumlahRoda(int roda) {
+  void jumlahRoda(int? roda) {
     print('Roda mobil: $roda');
     super.jumlahRoda(roda);
   }
@@ -42,11 +42,11 @@ class Mobil extends Kendaraan {
 }
 
 class Motor extends Kendaraan {
-  int roda;
+  int? roda;
   Motor({this.roda});
 
   @override
-  void jumlahRoda(int roda) {
+  void jumlahRoda(int? roda) {
     print('Roda motor: $roda');
     super.jumlahRoda(roda);
   }

@@ -3,7 +3,7 @@ Future<void> main() async {
   print('data telah selesai diproses');
 }
 
-Future<String> printData() async {
+Future<Object> printData() async {
   try {
     var data = await fetchData();
     return 'data: $data';

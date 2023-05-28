@@ -21,34 +21,34 @@
 */
 
 void main() {
-  RekeningBank rekeningRifqi = new RekeningBank();
-  rekeningRifqi.namaPemilik = 'Rifqi Eka Hardianto';
-  rekeningRifqi.namaBank = 'BTA';
-  rekeningRifqi.saldo = 10000000000;
-  print(rekeningRifqi.namaPemilik);
-  print(rekeningRifqi.namaBank);
-  print(rekeningRifqi.saldo);
-  rekeningRifqi.cekSaldo();
+  RekeningBank rekeningRAN = new RekeningBank();
+  rekeningRAN.namaPemilik = 'Resma Adi Nugroho';
+  rekeningRAN.namaBank = 'BCI';
+  rekeningRAN.saldo = 10000000000;
+  print(rekeningRAN.namaPemilik);
+  print(rekeningRAN.namaBank);
+  print(rekeningRAN.saldo);
+  rekeningRAN.cekSaldo();
   print('---------------------');
 
-  RekeningBank rekeningEka = new RekeningBank(
-    namaPemilik: 'Eka Husein',
+  RekeningBank rekeningNewt = new RekeningBank(
+    namaPemilik: 'Newt Scamander',
     namaBank: 'ATB',
     saldo: 5000000,
   );
-  print(rekeningEka.saldo);
-  rekeningEka.cekSaldo();
+  print(rekeningNewt.saldo);
+  rekeningNewt.cekSaldo();
   print('---------------------');
 
   RekeningBank rekeningDian = new RekeningBank(
-    namaPemilik: 'Dian Eka',
+    namaPemilik: 'Clarissa Dian',
     namaBank: 'TAB',
     saldo: 20000000,
   );
   print(rekeningDian.getPemilik);
   print(rekeningDian.getBank);
   print(rekeningDian.saldo);
-  rekeningDian.setNamaPemilik = 'Rifqi Dian';
+  rekeningDian.setNamaPemilik = 'Dian Fatmawati';
   rekeningDian.setNamaBank = 'Bank Rakyat';
   rekeningDian.setSaldo = 50000000;
   print(rekeningDian.getPemilik);
@@ -56,17 +56,17 @@ void main() {
   print(rekeningDian.getSaldo);
   print('---------------------');
 
-  RekeningBank rekeningOwo = new RekeningBank.Owo(
-    namaPemilik: 'Owo Hardianto',
+  RekeningBank rekeningOvo = new RekeningBank.Owo(
+    namaPemilik: 'Ovo RAN',
     saldo: 200000,
   );
-  print(rekeningOwo.getBank);
+  print(rekeningOvo.getBank);
 }
 
 class RekeningBank {
-  String namaPemilik;
-  String namaBank;
-  int saldo;
+  String? namaPemilik;
+  String? namaBank;
+  int? saldo;
 
   set setNamaPemilik(String nama) {
     this.namaPemilik = nama;
@@ -80,15 +80,15 @@ class RekeningBank {
     this.saldo = saldoBaru;
   }
 
-  String get getPemilik {
+  String? get getPemilik {
     return namaPemilik;
   }
 
-  String get getBank {
+  String? get getBank {
     return namaBank;
   }
 
-  int get getSaldo {
+  int? get getSaldo {
     return saldo;
   }
 

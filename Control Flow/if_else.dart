@@ -19,10 +19,10 @@ void main() {
     }
   }
 
-  String nama = 'Eka';
-  if (nama == 'Rifqi') {
-    print('Ini Rifqi');
+  String nama = 'Adi';
+  if (nama == 'Newt') {
+    print('Ini Newt');
   } else {
-    print('Ini bukan Rifqi');
+    print('Ini bukan Newt');
   }
 }

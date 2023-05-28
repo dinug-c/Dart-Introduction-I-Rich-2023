@@ -1,6 +1,6 @@
 void main() {
   Map<String, dynamic> mahasiswa = {
-    'nama': 'Rifqi',
+    'nama': 'Adi',
     'umur': 19,
     'nim': 'M012356',
   };
@@ -20,7 +20,7 @@ void main() {
   print(mahasiswa.containsKey('nama'));
 
   // mengecek apakah map memiliki value tertentu
-  print(mahasiswa.containsValue('Rifqi'));
+  print(mahasiswa.containsValue('Adi'));
 
   // mengembalikan panjang map
   print(mahasiswa.length);

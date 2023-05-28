@@ -9,7 +9,7 @@ void main() {
     tipe namaFungsi(parameter) => return nilai;
   */
 
-  String nama = 'Rifqi Eka Hardianto';
+  String nama = 'Resma Adi Nugroho';
   perkenalan(nama);
 
   int sisi = 10;

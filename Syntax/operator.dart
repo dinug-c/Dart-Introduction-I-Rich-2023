@@ -2,6 +2,7 @@ void main() {
   var a = 10;
   var b = 4;
   var c = a + b;
+  print('Hasil a+b: ${c}');
 
   // Operands -> representasi dari data (a & b)
   // Operators -> sesuatu yang memutuskan bagaimana operands akan diproses (+)
@@ -44,6 +45,7 @@ void main() {
   bool x = false;
   bool y = true;
   // && AND -> bernilai false apabila salah satu bernilai false
+  // ignore: dead_code
   print(x && y);
   // || OR -> berniali true apabila salah satu bernilai true
   print(x || y);

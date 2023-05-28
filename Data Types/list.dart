@@ -1,8 +1,12 @@
 void main() {
-  List<String> mahasiswa = ['Rifqi', 'Hanif', 'Faqih'];
+  List<String> mahasiswa = ['Adi', 'Nugroho', 'Ahmad'];
   // dimulai dari index 0 -> 0, 1, 2
 
   print(mahasiswa);
+
+  // spread operator
+  List<String> mahasiswaLama = [...mahasiswa, 'Budi', 'Cahya'];
+  print(mahasiswaLama);
 
   // mengembalikan nilai list pada index tertentu
   print(mahasiswa[2]);
